@@ -1,6 +1,9 @@
+
 export async function GET(req, { params }) {
+  const { username } = params;
+
   return Response.json({
-    username: params.username,
-    bio: "Demo user"
+    username,
+    bio: "Hello from Locket clone 🚀"
   });
 }
